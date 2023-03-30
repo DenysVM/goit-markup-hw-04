@@ -125,7 +125,7 @@ body {
   background-color: var(--description-text);
   padding-top: 188px;
   padding-bottom: 188px;
-  background-image: var(--bg-gradient), url("/images/people-office\ 1.png");
+  background-image: var(--bg-gradient), url("/images/people-office.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
