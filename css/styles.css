@@ -125,12 +125,13 @@ body {
   background-color: var(--description-text);
   padding-top: 188px;
   padding-bottom: 188px;
-  background-image: var(--bg-gradient), url("/images/people-office.png");
+  background-image: var(--bg-gradient), url("../images/people-office.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-description-item {
@@ -204,18 +205,13 @@ body {
   color: var(--main-text);
 }
 
-.icon-features {
-  width: 64px;
-  height: 64px;
-}
-
 .svg-features-block {
+  height: 112px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #f4f4fd;
   border-radius: 4px;
-  padding-top: 24px;
-  padding-bottom: 24px;
   margin-bottom: 8px;
 }
 
@@ -303,7 +299,7 @@ body {
 .team-social-list {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 24px;
 }
 
 .team-social-item {
@@ -357,12 +353,21 @@ body {
 }
 
 .svg-customers-icon {
+  height: 100%;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
   width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
+  fill: #8e8f99;
   border-radius: 4px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+}
+
+.section-customers-item {
+  width: calc((100% - 24px * 5) / 6);
 }
 
 .section-customers-list .section-customers-item + .section-customers-item {
@@ -373,11 +378,11 @@ body {
   justify-content: center;
 }
 
-.svg-customers-icon:hover {
+.customers-link:hover {
   fill: #404bbf;
   border-color: #404bbf;
 }
-.svg-customers-icon:focus {
+.customers-link:focus {
   fill: #404bbf;
   border-color: #404bbf;
 }
@@ -388,6 +393,9 @@ body {
   background-color: var(--description-text);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer-container {
   display: flex;
 }
 
@@ -428,7 +436,6 @@ body {
 
 .footer-social-list {
   display: flex;
-  justify-content: left;
   gap: 10px;
 }
 
@@ -490,6 +497,7 @@ body {
   background-color: var(--hover-focus-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--hover-focus-color);
 }
 
 .section-btn:focus {
@@ -497,6 +505,7 @@ body {
   background-color: var(--hover-focus-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--hover-focus-color);
 }
 
 /* Services */
@@ -523,7 +532,11 @@ body {
   margin-bottom: 0px;
 }
 
-.item:hover {
+.sevices-link {
+  display: block;
+}
+
+.sevices-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
